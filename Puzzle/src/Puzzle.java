@@ -63,7 +63,6 @@ public  class Puzzle extends JFrame implements ActionListener{
 				return false;
 			}
 			int b = Integer.parseInt(s);
-			System.out.println(b);
 			if(n!=b){
 				
 				return false;
