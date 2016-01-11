@@ -54,6 +54,24 @@ public  class Puzzle extends JFrame implements ActionListener{
 			nb[3] = -1;
 		}
 	}
+	private boolean isEnd(){
+		
+		int n=1;
+		for(int i=0;i<15;i++){
+			String s = btn[i].getText();
+			if(s==""){
+				return false;
+			}
+			int b = Integer.parseInt(s);
+			System.out.println(b);
+			if(n!=b){
+				
+				return false;
+			}
+			n++;
+		}
+		return true;
+	}
 	
 	public void actionPerformed(ActionEvent e){
 		JButton  b = (JButton)e.getSource();
@@ -77,6 +95,11 @@ public  class Puzzle extends JFrame implements ActionListener{
 				break;
 			}
 		}
+
+		if(isEnd()){
+			System.exit(0);
+		}
+		
 		
 	}
 	
