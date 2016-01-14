@@ -1,5 +1,8 @@
 import java.awt.*;
 import java.awt.event.*;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 import javax.swing.*;
 
 public  class Puzzle extends JFrame implements ActionListener{
@@ -7,7 +10,7 @@ public  class Puzzle extends JFrame implements ActionListener{
 	private JButton btn[];
 	public static void main(String[] args) {
 		new Puzzle();
-
+	
 	}
 	Puzzle(){
 		setTitle("Puzzle");
